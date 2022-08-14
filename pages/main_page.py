@@ -13,7 +13,6 @@ class MainPage:
     def go_to_register_form(self) -> None:
         self.register_button.click()
 
-<<<<<<< HEAD
     @property
     def forgot_login_info_button(self) -> Locator:
         return self.page.locator("text=Forgot login info?")
@@ -23,8 +22,3 @@ class MainPage:
 
     def navigate(self) -> None:
         self.page.goto(settings.TEST_URL)
-
-=======
-    def navigate(self) -> None:
-        self.page.goto(settings.TEST_URL)
->>>>>>> 955c463c696d1772ff8ab3f5858211354b62c497

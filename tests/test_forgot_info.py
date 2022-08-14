@@ -11,7 +11,6 @@ def test_forgot_info(user_data: dict, playwright: Playwright):
     page = context.new_page()
     main_page = MainPage(page)
     forgot_info_page = ForgotPage(page)
-    #user_data["username"] = user_data["username"] + str(time())[:-10]
     main_page.navigate()
     main_page.go_to_forgot_login_info_form()
     page.pause()

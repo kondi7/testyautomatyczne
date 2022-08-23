@@ -14,5 +14,4 @@ class Base(BaseSettings):
     USERNAME: str = "heniek55"
     PASSWORD: str = "klemens1"
 
-
 settings = Base()

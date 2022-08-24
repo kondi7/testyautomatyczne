@@ -26,6 +26,9 @@ class MainPage:
     def log_in_button(self) -> Locator:
         return self.page.locator("text=Log In")
 
+    def go_to_register_form(self) -> None:
+        self.register_button.click()
+
     def login_to_app(self, user_data) -> None:
         self.customer_login_field.fill(user_data["username"])
         self.password_login_field.fill(user_data["password"])
@@ -34,8 +37,8 @@ class MainPage:
     def go_to_forgot_login_info_form(self) -> None:
         self.forgot_login_info_button.click()
 
-    def go_to_register_form(self) -> None:
-        self.register_button.click()
+    def go_to_contact_us_form(self) -> None:
+        self.page.locator("text=Contact Us").click()
 
     def navigate(self) -> None:
         self.page.goto(settings.TEST_URL)

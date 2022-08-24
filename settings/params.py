@@ -13,5 +13,7 @@ class Base(BaseSettings):
     SSN: str = "1234043043"
     USERNAME: str = "heniek55"
     PASSWORD: str = "klemens1"
+    EMAIL: str = "heniek55@siema.pl"
+    MESSAGE: str = "eeeeeeeeelo"
 
 settings = Base()

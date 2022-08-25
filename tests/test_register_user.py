@@ -11,7 +11,7 @@ def test_register_user(user_data: dict, playwright: Playwright):
     page = context.new_page()
     main_page = MainPage(page)
     register_page = RegisterPage(page)
-    user_data["username"] = user_data["username"] + str(time())[:-10]
+    #user_data["username"] = user_data["username"] + str(time())[:-10]
     main_page.navigate()
     main_page.go_to_register_form()
     page.pause()

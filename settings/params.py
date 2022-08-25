@@ -15,5 +15,6 @@ class Base(BaseSettings):
     PASSWORD: str = "klemens1"
     EMAIL: str = "heniek55@siema.pl"
     MESSAGE: str = "eeeeeeeeelo"
+    AMOUNT: str = "5"
 
 settings = Base()

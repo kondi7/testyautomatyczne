@@ -16,5 +16,6 @@ def user_data() -> dict:
         "username": settings.USERNAME,
         "password": settings.PASSWORD,
         "email": settings.EMAIL,
-        "message": settings.MESSAGE
+        "message": settings.MESSAGE,
+        "amount": settings.AMOUNT,
     }

@@ -20,7 +20,7 @@ class TransferFunds:
 
     def transfer_complete_prompt(self, user_data: dict) -> Locator:
         return self.page.locator(
-            f'text=${user_data["amount"]}.00 has been transferred from account #22557 to account #22557.'
+            f'text=${user_data["amount"]}.00 has been transferred'
         )
 
     def fill_amount_form(self, user_data: dict) -> None:

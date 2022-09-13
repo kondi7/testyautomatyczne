@@ -26,6 +26,10 @@ class MainPage:
     def log_in_button(self) -> Locator:
         return self.page.locator("text=Log In")
 
+    @property
+    def log_out_button(self) -> Locator:
+        return self.page.locator("text=Log Out")
+
     def go_to_register_form(self) -> None:
         self.register_button.click()
 
@@ -33,6 +37,7 @@ class MainPage:
         self.customer_login_field.fill(user_data["username"])
         self.password_login_field.fill(user_data["password"])
         self.log_in_button.click()
+        self.log_out_button.click()
 
     def go_to_forgot_login_info_form(self) -> None:
         self.forgot_login_info_button.click()
